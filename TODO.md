@@ -126,8 +126,8 @@ browser client has been exercised against a running server.
 - [x] Read port/host from environment; disable debug in production.
 - [x] Note: in-memory games are per process — run a single worker (or document
       the limitation).
-- [ ] Deploy to a cloud host (e.g. Render free tier).
-- [ ] Smoke-test the deployed URL (page loads, game playable).
+- [x] Deploy to a cloud host (Render free tier): https://hangman-n5f4.onrender.com
+- [x] Smoke-test the deployed URL (page loads, game playable).
 - [x] `README.md`: install, run locally, test, API summary, deploy steps.
 
 ### Completion Criteria

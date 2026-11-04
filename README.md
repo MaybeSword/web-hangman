@@ -1,6 +1,6 @@
 # Web Hangman
 
-A browser Hangman game. The Flask server runs all the game logic. The browser
+A browser Hangman game. Live at https://hangman-n5f4.onrender.com. The Flask server runs all the game logic. The browser
 client (HTML/CSS/JavaScript) talks to it only through a small JSON REST API.
 The client does not get the hidden word until the game is over.
 
