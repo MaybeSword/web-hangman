@@ -36,11 +36,7 @@ The app runs on Render's free tier from the `render.yaml` Blueprint. The build c
 
 ## 6. Reflection
 
-> **[STUDENT: write 3–5 sentences on what you learned about AI-assisted development]**
->
-> - Where did the agent need correction or clearer instructions?
-> - How much did tests and browser verification add before checking items off?
-> - How did scoping the TODO into phases affect the result?
+The biggest lesson was that an AI agent works best when I give it a narrow, clear scope. Cutting the TODO down to five phases and telling it "do not write code yet" kept it from building features the assignment did not ask for. I also learned not to trust a checkmark on its own: my old TODO had every box checked, but that code was gone, and this time items were marked done only after the tests passed and the game worked in a real browser. The agent was fast at writing the engine, API, tests and deployment config, but some steps still needed me, such as signing in to Render, deciding to make the repository public, and recording the demo. Overall, I now see AI-assisted development as directing and checking the work rather than just accepting what the agent produces.
 
 ## Representative Prompts
 
