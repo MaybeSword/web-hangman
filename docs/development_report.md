@@ -1,6 +1,7 @@
 # Web Hangman — Development Report
 
-**Name:** ____________________  
+**Name:** Kris Rimal  
+**Course:** CSE 4095  
 **Repository:** https://github.com/MaybeSword/web-hangman  
 **Live app:** https://hangman-n5f4.onrender.com
 
@@ -44,5 +45,5 @@ The app runs on Render's free tier from the `render.yaml` Blueprint. The build c
 ## Representative Prompts
 
 1. "Revise TODO.md into a phased plan for these areas only: game engine and word management, Flask server and REST API, browser client, testing and debugging, cloud deployment. Mark removed tasks as out of scope. Do not write code yet."
-2. "Prepare this project for Render. Add gunicorn to requirements.txt. Make sure the app does not run in debug mode in production. Use this start command: gunicorn --bind 0.0.0.0:$PORT --workers 1 server:app. Add a short deploy section to README.md. Run the tests, then commit."
+2. "Prepare this project for Render. Add gunicorn to requirements.txt. Make sure the app does not run in debug mode in production. Use this start command: `gunicorn --bind 0.0.0.0:$PORT --workers 1 server:app`. Add a short deploy section to README.md. Run the tests, then commit."
 3. "Review the project against this checklist: engine, three endpoints, hidden word never leaked, browser uses fetch only, tests pass, README present, original spec and updated TODO in the repo, no secrets committed. List anything missing."
