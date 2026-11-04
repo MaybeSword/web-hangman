@@ -1,0 +1,50 @@
+:root {
+  --bg: #f7f5f0;
+  --fg: #1f2328;
+  --muted: #6a6f76;
+  --accent: #2f6fdb;
+  --key-bg: #ffffff;
+  --key-border: #d0d4da;
+  --good: #1f8a4c;
+  --bad: #c2362f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181c;
+    --fg: #e8eaed;
+    --muted: #9aa0a6;
+    --accent: #7aa7ff;
+    --key-bg: #22262b;
+    --key-border: #3a3f46;
+    --good: #5cc98a;
+    --bad: #ff7b72;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 640px; margin: 0 auto; padding: 16px; text-align: center; }
+h1 { margin: 8px 0 16px; }
+.controls { display: flex; gap: 8px; justify-content: center; align-items: center; flex-wrap: wrap; }
+select, button { font: inherit; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--key-border); background: var(--key-bg); color: var(--fg); }
+#new-game { background: var(--accent); color: #fff; border-color: var(--accent); cursor: pointer; }
+#gallows { width: 180px; height: 200px; margin: 16px auto 0; display: block; }
+#gallows line, #gallows circle { stroke: var(--fg); stroke-width: 4; fill: none; stroke-linecap: round; }
+#gallows .part { visibility: hidden; }
+#gallows .part.shown { visibility: visible; }
+.pattern { font: 700 clamp(22px, 7vw, 36px) ui-monospace, monospace; letter-spacing: .15em; margin: 12px 0 4px; min-height: 1.4em; word-break: break-all; }
+.message { min-height: 1.4em; font-weight: 600; }
+.message.won { color: var(--good); }
+.message.lost, .message.error { color: var(--bad); }
+.stats { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 8px 0 16px; }
+.stats dt { color: var(--muted); font-size: 13px; }
+.stats dd { margin: 0; font-weight: 600; min-width: 3ch; }
+.keyboard { display: grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap: 6px; max-width: 520px; margin: 0 auto; }
+.keyboard button { padding: 10px 0; cursor: pointer; text-transform: uppercase; font-weight: 600; }
+.keyboard button:disabled { cursor: default; opacity: .4; }
+.keyboard button.hit:disabled { background: var(--good); color: #fff; opacity: .8; }
+.keyboard button.miss:disabled { background: var(--bad); color: #fff; opacity: .6; }

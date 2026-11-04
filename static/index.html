@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <h1>Hangman</h1>
+    <div class="controls">
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="new-game" type="button">New Game</button>
+    </div>
+
+    <svg id="gallows" viewBox="0 0 200 220" role="img" aria-label="Hangman drawing">
+      <line x1="20" y1="210" x2="180" y2="210" />
+      <line x1="60" y1="210" x2="60" y2="20" />
+      <line x1="60" y1="20" x2="140" y2="20" />
+      <line x1="140" y1="20" x2="140" y2="45" />
+      <circle class="part" cx="140" cy="65" r="20" />
+      <line class="part" x1="140" y1="85" x2="140" y2="140" />
+      <line class="part" x1="140" y1="100" x2="115" y2="125" />
+      <line class="part" x1="140" y1="100" x2="165" y2="125" />
+      <line class="part" x1="140" y1="140" x2="120" y2="175" />
+      <line class="part" x1="140" y1="140" x2="160" y2="175" />
+    </svg>
+
+    <p id="pattern" class="pattern" aria-live="polite"></p>
+    <p id="message" class="message" aria-live="polite"></p>
+
+    <dl class="stats">
+      <div><dt>Remaining</dt><dd id="remaining">–</dd></div>
+      <div><dt>Guessed</dt><dd id="guessed">–</dd></div>
+      <div><dt>Wrong</dt><dd id="incorrect">–</dd></div>
+    </dl>
+
+    <div id="keyboard" class="keyboard"></div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
